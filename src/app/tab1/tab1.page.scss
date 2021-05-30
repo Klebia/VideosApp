@@ -7,7 +7,7 @@ ion-item{
     height: 100%;
     margin-inline-end: 10px;
   }
-}
+
 h1{
   font-weight: bold;
   font-size: 0.8rem;
@@ -20,4 +20,11 @@ p+p{
 }
 ion-chip{
   padding-inline:3px;
+}
+ion-badge{
+  font-weight: 300;
+  font-size: 0.6rem;
+  margin-right: 2px;
+
+}
 }

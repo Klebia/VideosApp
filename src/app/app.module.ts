@@ -1,3 +1,4 @@
+import { DadosSeriesService } from './services/dados-series.service';
 import { DadosService } from './services/dados.service';
 import { LOCALE_ID,NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,7 +26,8 @@ registerLocaleData(localePt);
 
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-  DadosService,
+  DadosService, DadosSeriesService,
+
   {provide: LOCALE_ID, useValue: 'pt-BR'},
   ],
 

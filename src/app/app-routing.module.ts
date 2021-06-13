@@ -20,6 +20,22 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'lucifer',
+    loadChildren: () => import('./series/lucifer/lucifer.module').then( m => m.LuciferPageModule)
+  },
+  {
+    path: 'greys',
+    loadChildren: () => import('./series/greys/greys.module').then( m => m.GreysPageModule)
+  },
+  {
+    path: 'grey',
+    loadChildren: () => import('./series/grey/grey.module').then( m => m.GreyPageModule)
+  },
+  {
+    path: 'dados-serie',
+    loadChildren: () => import('./dados-serie/dados-serie.module').then( m => m.DadosSeriePageModule)
   }
 ];
 @NgModule({

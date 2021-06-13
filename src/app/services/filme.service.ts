@@ -9,11 +9,19 @@ import { ToastController } from '@ionic/angular';
   providedIn: 'root'
 })
 export class FilmeService {
+  buscarSeries(busca: any) {
+    throw new Error('Method not implemented.');
+  }
 
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   lingua = 'pt-BR';
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   regiao='BR';
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   private apiURL = 'https://api.themoviedb.org/3/';
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   private key = '?api_key=157598f441c2903a341d21221957f5e1';
+  // eslint-disable-next-line @typescript-eslint/member-ordering
   constructor(private http: HttpClient, public toastController: ToastController) { }
 
   buscarFilmes(busca: string): Observable<IListaFilmes>{
